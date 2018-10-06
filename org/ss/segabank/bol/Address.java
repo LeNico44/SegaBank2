@@ -19,8 +19,15 @@ public class Address implements Serializable {
 	private String zipCode;
 	private String city;
 	
-	protected Address() {}
+	public Address() {}
 	
+	public Address(String number, String street, String zipCode, String city) {
+		this.number = number;
+		this.street = street;
+		this.zipCode = zipCode;
+		this.city = city;
+	}
+
 	protected String getNumber() {
 		return number;
 	}
@@ -44,5 +51,16 @@ public class Address implements Serializable {
 	}
 	protected void setCity(String city) {
 		this.city = city;
+	}
+	
+	@Override
+	public String toString() {
+		final StringBuffer sb = new StringBuffer( "Address{" );
+		sb.append( "number='" ).append( number ).append( '\'' );
+		sb.append( ", street='" ).append( street ).append( '\'' );
+		sb.append( ", zipCode='" ).append( zipCode ).append( '\'' );
+		sb.append( ", city='" ).append( city ).append( '\'' );
+		sb.append( '}' );
+		return sb.toString();
 	}
 }
