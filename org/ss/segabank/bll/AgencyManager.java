@@ -20,11 +20,13 @@ public class AgencyManager {
 	/**
 	 * La méthode de fabrication
 	 */
-	public void creationDAgenceAvecAdresse(String number, String street, String zipCode, String city, String code) {
+	public Agency creationDAgenceAvecAdresse(String number, String street, String zipCode, String city, String code) {
 		Address adresse = new Address(number, street, zipCode, city);
 		this.agence = new Agency();
 		agence.setCode(code);
 		agence.setAddress(adresse);
+		
+		return agence;
 		
 	}
 	
