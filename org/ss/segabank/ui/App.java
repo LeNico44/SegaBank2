@@ -1,4 +1,4 @@
-package org.ss.segabank;
+package org.ss.segabank.ui;
 
 import org.ss.segabank.domain.*;
 import org.ss.segabank.exception.BalanceNotEnoughException;
