@@ -3,12 +3,14 @@
  */
 package org.ss.segabank.bol;
 
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 /**
  * @author nicolas
  *
  */
+@Embeddable
 public class Address implements Serializable {
 	/**
 	 * 
